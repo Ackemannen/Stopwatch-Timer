@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Stopwatch and Timer</title>
+</head>
+<body>
+    <main>
+        <h1 class="title-text">Stopwatch</h1>
+        <!-- Stopwatch -->
+        <div id="stopwatch-div" class="container">
+            <div class="toggle">
+                <button id="s-stopwatch-btn" class="toggle-stopwatch toggle-btn chosen">Stopwatch</button>
+                <button id="s-timer-btn" class="toggle-timer toggle-btn">Timer</button>
+            </div>
+            <div class="stopwatch-numbers" id="stopwatch-numbers">
+                00 : 00 : 00 : 00
+            </div>
+            <div class="buttons">
+                <button id="stopwatch-start-btn" class="start-btn select-btn"><i class="fa-solid fa-play"></i></button>
+                <button id="stopwatch-stop-btn" class="stop-btn select-btn"><i class="fa-solid fa-stop"></i></button>
+                <button id="stopwatch-reset-btn" class="reset-btn select-btn"><i class="fa-solid fa-rotate-left"></i></button>
+            </div>
+        </div>
+
+        <!-- Timer -->
+         <div id="timer-div" class="container timer-container hidden">
+            <div class="toggle">
+                <button id="t-stopwatch-btn" class="toggle-stopwatch toggle-btn chosen">Stopwatch</button>
+                <button id="t-timer-btn" class="toggle-timer toggle-btn">Timer</button>
+            </div>
+            <div class="timer">
+                <div class="timer-numbers" id="timer-numbers">
+                    <!-- Add input fields for hours, minutes, and seconds -->
+                    <input type="number" class="timer-input timer-hours" value="00" min="0" max="99">
+                    <div class="divider">:</div>
+                    <input type="number" class="timer-input timer-minutes" value="00" min="0" max="59">
+                    <div class="divider">:</div>
+                    <input type="number" class="timer-input timer-seconds" value="00" min="0" max="59">
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="timer-start-btn" class="start-btn select-btn"><i class="fa-solid fa-play"></i></button>
+                <button id="timer-stop-btn" class="stop-btn select-btn"><i class="fa-solid fa-stop"></i></button>
+                <button id="timer-reset-btn" class="reset-btn select-btn"><i class="fa-solid fa-rotate-left"></i></button>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
